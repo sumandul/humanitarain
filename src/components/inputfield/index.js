@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+<<<<<<< HEAD
 import { classNames } from "../../helper/classNames";
+=======
+import { classNames } from "../helpers/classNames";
+>>>>>>> 085b5a4 (update)
 import { HiEye, HiEyeOff } from "react-icons/hi";
 
 const InputField = ({
@@ -21,11 +25,18 @@ const InputField = ({
 }) => {
   const currentDate = new Date().toISOString().split("T")[0];
   const [showPassword, SetShowPassword] = useState(false);
+<<<<<<< HEAD
   console.log(name);
   return (
     <div>
       {label && (
         <label className="block capitalize text-sm sm:text-[20px] mb-4     text-[#232321]  font-semibold ">
+=======
+  return (
+    <div>
+      {label && (
+        <label className="block capitalize text-sm sm:text-base mb-2     text-zapp-light_black  font-semibold ">
+>>>>>>> 085b5a4 (update)
           {label}
         </label>
       )}
@@ -33,7 +44,11 @@ const InputField = ({
         <input
           type={showPassword ? "text" : type}
           className={classNames(
+<<<<<<< HEAD
             "px-3     text-[0.8rem]  sm:text-base       bg-zapp-white  accent-zapp-primary border-[0.05rem]   focus: outline-zapp-primary   border-zapp-gray_500 rounded-[5px]   ",
+=======
+            "px-3     text-[0.8rem]  sm:text-base      w-full  bg-zapp-white  accent-zapp-primary border-[0.05rem]   focus: outline-zapp-primary   border-zapp-gray_500 rounded-[1rem]   ",
+>>>>>>> 085b5a4 (update)
             className
           )}
           name={name}
@@ -42,6 +57,10 @@ const InputField = ({
           onChange={onChange}
           disabled={disabled}
           onClick={onClick}
+<<<<<<< HEAD
+=======
+          max={currentDate}
+>>>>>>> 085b5a4 (update)
           {...props}
           {...(register && register(name, rules))}
         />
@@ -62,7 +81,11 @@ const InputField = ({
       </div>
 
       {errors && (
+<<<<<<< HEAD
         <p className=" text-sm    text-red-500  font-light  capitalize ">
+=======
+        <p className=" text-sm   text-zapp-primary  font-light  capitalize ">
+>>>>>>> 085b5a4 (update)
           {errors[name]?.message}
         </p>
       )}

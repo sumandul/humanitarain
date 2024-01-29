@@ -16,6 +16,7 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
+<<<<<<< HEAD
   return (
 <<<<<<< HEAD
     <main>
@@ -108,4 +109,7 @@ export default function Home() {
 >>>>>>> 0a18f20 (Completed all the front end pages)
     </main>
   );
+=======
+  return <main className=" text-green-500">hello world</main>;
+>>>>>>> 085b5a4 (update)
 }

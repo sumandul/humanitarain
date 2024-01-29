@@ -1,15 +1,25 @@
 import Link from "next/link";
+<<<<<<< HEAD
 import AdminDashBoardLayout from "../../../components/DashBoardLayout";
 import { Button } from "@/components/button";
 import InputField from "@/components/inputfield";
 import Image from "next/image";
 import ImageSkleton from "../../../../public/profile.png";
 import { HiOutlinePencil } from "react-icons/hi";
+=======
+import AdminDashBoardLayout from "@/components/DashBoardLayout";
+import Image from "next/image";
+import ImageSkleton from "../../../../public/profile.png";
+>>>>>>> 085b5a4 (update)
 
 export default function Profile() {
   return (
     <AdminDashBoardLayout>
+<<<<<<< HEAD
       <div className=" flex flex-col gap-16 ">
+=======
+      <div className=" flex flex-col gap-10">
+>>>>>>> 085b5a4 (update)
         <h3 className=" text-[32px] font-semibold">Profile</h3>
         <div className=" ">
           <span className=" bg-[#E6FAF8] rounded-xl font-semibold text-base text-[#324054] px-4 py-3  ">
@@ -19,6 +29,7 @@ export default function Profile() {
         <div className="w-[15rem] h-[15rem]  rounded-full bg-gray-400">
           <Image src={ImageSkleton} className=" object-cover w-full h-full" />
         </div>
+<<<<<<< HEAD
         <div className=" flex flex-col gap-14">
           <div className=" flex  gap-20  ">
             <div className=" flex flex-col gap-8">
@@ -131,6 +142,9 @@ export default function Profile() {
             </div>
           </div>
         </div>
+=======
+        <div></div>
+>>>>>>> 085b5a4 (update)
       </div>
     </AdminDashBoardLayout>
   );

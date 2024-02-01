@@ -3,7 +3,10 @@ import AdminDashBoardLayout from "../../../../components/DashBoardLayout";
 // import ImageSkleton from "../../../../public/rect.png";
 import { HiOutlinePencil } from "react-icons/hi";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
+<<<<<<< HEAD
 import Link from "next/link";
+=======
+>>>>>>> c4272b6 (update)
 
 export default function ApplicantsList() {
   const columns = [
@@ -23,6 +26,7 @@ export default function ApplicantsList() {
   return (
     <AdminDashBoardLayout>
       <div className=" flex flex-col  gap-16 ">
+<<<<<<< HEAD
         <div className=" flex justify-between item center">
           <div>
             <h3 className=" text-[32px] font-semibold">Applicants</h3>
@@ -40,6 +44,16 @@ export default function ApplicantsList() {
         </div>
         <div>
           <Table columns={columns} className={" w-full"} />
+=======
+        <div>
+          <h3 className=" text-[32px] font-semibold">Applicants</h3>
+          <p className="text-[#475569] text-[18px] font-normal">
+            Call Center Executive
+          </p>
+        </div>
+        <div>
+          <Table columns={columns} className={"w-full"} />
+>>>>>>> c4272b6 (update)
         </div>
         {/* <div className="  grid grid-cols-3 gap-20">
           <div className=" border-[1px] border-[#D9D9D9] flex flex-col gap-6 rounded-[12px] p-6 ">

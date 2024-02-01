@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 import React from "react";
 
 import { classNames } from "../../helper/classNames";
+=======
+// ... (other imports)
+
+// ... (other imports)
+import { classNames } from "@/helper/classNames";
+>>>>>>> c4272b6 (update)
 
 const Table = ({
   columns,
@@ -14,6 +21,7 @@ const Table = ({
   const getCellValue = (row, selector) => {
     return selector(row);
   };
+<<<<<<< HEAD
   return (
     <>
       <div className=" pb-20 overflow-x-auto sm:overflow-y-hidden    ">
@@ -66,6 +74,35 @@ const Table = ({
             ""
           )}
         </table>
+=======
+
+  return (
+    <>
+      <div className="pb-20 overflow-x-auto sm:overflow-y-hidden">
+        <table
+          className={classNames(
+            "border-[3px] border-[#6E6E9B] rounded-xl overflow-hidden  ",
+            className
+          )}
+        >
+          <thead className="">
+            <tr className="">
+              {columns?.map((column, index) => (
+                <th
+                  className={`text-start py-4 px-2  ${
+                    index === 0 ? "" : " " // This condition might not be necessary
+                  } uppercase font-semibold text-[0.7rem] `} // Add rounded-xl here
+                  key={index}
+                >
+                  {column.header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          {/* ... (rest of the code) */}
+        </table>
+        {/* ... (rest of the code) */}
+>>>>>>> c4272b6 (update)
       </div>
     </>
   );

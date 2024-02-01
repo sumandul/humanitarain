@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .jodit-container:not(.jodit_inline) {
   border-color: black !important;
 }
@@ -12,6 +13,8 @@
   background-size: 100% 100%;
 }
 =======
+=======
+>>>>>>> c4272b6 (update)
 .hero, .openings,.contact,.faq,.signin{
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -37,4 +40,17 @@
     background-image: url("../../public/images/signin.png");
     /* height: 80dvh; */
 }
+<<<<<<< HEAD
 >>>>>>> 0a18f20 (Completed all the front end pages)
+=======
+=======
+.jodit-container:not(.jodit_inline) {
+  border-color: black !important;
+}
+.hero {
+  background-image: url("../../public/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+>>>>>>> 61b374e (update)
+>>>>>>> c4272b6 (update)

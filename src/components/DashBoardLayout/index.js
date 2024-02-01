@@ -38,8 +38,8 @@ export default function AdminDashBoardLayout({ children }) {
       <div className=" basis-[20%]  pt-10 border-r-2 px-14  border-[#CCC5FA]   ">
         <div>
           <ul className=" flex flex-col gap-4 text-base text-[#324054] font-semibold capitalize">
-            {sideMenu.map((item) => (
-              <Link href={`${item.path}`}>
+            {sideMenu.map((item, i) => (
+              <Link key={i} href={`${item.path}`}>
                 <li
                   className={` ${
                     currentRoute === `${item.path}` && "bg-[#ECFDF5]"

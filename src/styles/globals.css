@@ -4,6 +4,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .jodit-container:not(.jodit_inline) {
   border-color: black !important;
 }
@@ -19,31 +20,42 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
+=======
+.hero,
+.openings,
+.contact,
+.faq,
+.signin {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+>>>>>>> f9d413c (chnage)
 }
-.hero{
-    background-image: url("../../public/images/hero.png");
-   
+.hero {
+  background-image: url("../../public/images/hero.png");
 }
-.openings{
-    background-image: url("../../public/images/openings.png");
+.openings {
+  background-image: url("../../public/images/openings.png");
 }
 
-.contact{
-    background-image: url("../../public/images/contact.png");
+.contact {
+  background-image: url("../../public/images/contact.png");
 }
 
-.faq{
-    background-image: url("../../public/images/faq.png");
+.faq {
+  background-image: url("../../public/images/faq.png");
 }
 
-.signin{
-    background-image: url("../../public/images/signin.png");
-    /* height: 80dvh; */
+.signin {
+  background-image: url("../../public/images/signin.png");
+  /* height: 80dvh; */
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0a18f20 (Completed all the front end pages)
 =======
 =======
+=======
+>>>>>>> f9d413c (chnage)
 .jodit-container:not(.jodit_inline) {
   border-color: black !important;
 }
@@ -52,5 +64,8 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+<<<<<<< HEAD
 >>>>>>> 61b374e (update)
 >>>>>>> c4272b6 (update)
+=======
+>>>>>>> f9d413c (chnage)

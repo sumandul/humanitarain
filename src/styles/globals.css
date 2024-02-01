@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .jodit-container:not(.jodit_inline) {
   border-color: black !important;
 }
@@ -13,14 +9,6 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-=======
-=======
->>>>>>> c4272b6 (update)
-.hero, .openings,.contact,.faq,.signin{
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-=======
 .hero,
 .openings,
 .contact,
@@ -28,7 +16,6 @@
 .signin {
   background-repeat: no-repeat;
   background-size: 100% 100%;
->>>>>>> f9d413c (chnage)
 }
 .hero {
   background-image: url("../../public/images/hero.png");
@@ -49,13 +36,6 @@
   background-image: url("../../public/images/signin.png");
   /* height: 80dvh; */
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 0a18f20 (Completed all the front end pages)
-=======
-=======
-=======
->>>>>>> f9d413c (chnage)
 .jodit-container:not(.jodit_inline) {
   border-color: black !important;
 }
@@ -64,8 +44,3 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-<<<<<<< HEAD
->>>>>>> 61b374e (update)
->>>>>>> c4272b6 (update)
-=======
->>>>>>> f9d413c (chnage)

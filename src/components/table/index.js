@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-import React from "react";
-
-import { classNames } from "../../helper/classNames";
-=======
 // ... (other imports)
 
 // ... (other imports)
 import { classNames } from "@/helper/classNames";
->>>>>>> c4272b6 (update)
 
 const Table = ({
   columns,
@@ -21,60 +15,6 @@ const Table = ({
   const getCellValue = (row, selector) => {
     return selector(row);
   };
-<<<<<<< HEAD
-  return (
-    <>
-      <div className=" pb-20 overflow-x-auto sm:overflow-y-hidden    ">
-        <table
-          className={classNames(" bg-zapp-white  rounded-md  ", className)}
-        >
-          <thead className="  ">
-            <tr className="border-b-[0.0625rem]   border-zapp-gray_500">
-              {columns?.map((column, index) => {
-                return (
-                  <>
-                    <th
-                      className={` text-start py-4 px-2   ${
-                        index === 0 && " "
-                      }  uppercase   text-[20px] font-[700]`}
-                      key={index}
-                    >
-                      {column.header}
-                    </th>
-                  </>
-                );
-              })}
-            </tr>
-          </thead>
-          {data?.length > 0 ? (
-            <tbody>
-              {data?.map((row, rowIndex) => {
-                return (
-                  <tr
-                    key={rowIndex}
-                    className="border-b-[0.0625rem]  rounded-lg   border-zapp-gray_500"
-                  >
-                    {columns?.map((column, columnIndex) => {
-                      return (
-                        <>
-                          <td
-                            key={columnIndex}
-                            className=" text-[0.8rem] py-4 pr-5"
-                          >
-                            {getCellValue(row, column.selector)}
-                          </td>
-                        </>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-            </tbody>
-          ) : (
-            ""
-          )}
-        </table>
-=======
 
   return (
     <>
@@ -102,7 +42,6 @@ const Table = ({
           {/* ... (rest of the code) */}
         </table>
         {/* ... (rest of the code) */}
->>>>>>> c4272b6 (update)
       </div>
     </>
   );

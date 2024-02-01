@@ -1,13 +1,5 @@
 import PropTypes from "prop-types";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { classNames } from "../../helper/classNames";
-=======
-import { classNames } from "../helpers/classNames";
->>>>>>> 085b5a4 (update)
-=======
-import { classNames } from "../../helper/classNames";
->>>>>>> c4272b6 (update)
 export const Button = ({
   className,
   children,
@@ -22,24 +14,10 @@ export const Button = ({
       disabled={disabled}
       type={type === "submit" ? "submit" : type === "reset" ? "reset" : ""}
       className={classNames(
-<<<<<<< HEAD
-<<<<<<< HEAD
         " sm:px-4   capitalize text-sm sm:text-base font-semibold cursor-pointer border-zapp-transparent select-none [outline:none] shadow-md focus:ring-[1px] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-100 disabled:shadow-inner",
         rounded ? "rounded" : "",
         variant === "primary"
           ? "  text-zapp-white  hover:bg-zapp-secondary duration-700 transition-colors "
-=======
-        " sm:px-4  border-[0.5rem] capitalize text-sm sm:text-base font-semibold cursor-pointer border-zapp-transparent select-none [outline:none] shadow-md focus:ring-[1px] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-100 disabled:shadow-inner",
-        rounded ? "rounded" : "",
-        variant === "primary"
-          ? " bg-zapp-primary text-zapp-white  hover:bg-zapp-secondary duration-700 transition-colors "
->>>>>>> 085b5a4 (update)
-=======
-        " sm:px-4   capitalize text-sm sm:text-base font-semibold cursor-pointer border-zapp-transparent select-none [outline:none] shadow-md focus:ring-[1px] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-100 disabled:shadow-inner",
-        rounded ? "rounded" : "",
-        variant === "primary"
-          ? "  text-zapp-white  hover:bg-zapp-secondary duration-700 transition-colors "
->>>>>>> c4272b6 (update)
           : "",
         variant === "secondary"
           ? "  bg-zapp-secondary text-zapp-white hover:bg-zapp-primary transition-colors"

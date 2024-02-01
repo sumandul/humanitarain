@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { classNames } from "../helpers/classNames";
+import { classNames } from "../../helper/classNames";
 export const Button = ({
   className,
   children,
@@ -14,10 +14,10 @@ export const Button = ({
       disabled={disabled}
       type={type === "submit" ? "submit" : type === "reset" ? "reset" : ""}
       className={classNames(
-        " sm:px-4  border-[0.5rem] capitalize text-sm sm:text-base font-semibold cursor-pointer border-zapp-transparent select-none [outline:none] shadow-md focus:ring-[1px] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-100 disabled:shadow-inner",
+        " sm:px-4   capitalize text-sm sm:text-base font-semibold cursor-pointer border-zapp-transparent select-none [outline:none] shadow-md focus:ring-[1px] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-100 disabled:shadow-inner",
         rounded ? "rounded" : "",
         variant === "primary"
-          ? " bg-zapp-primary text-zapp-white  hover:bg-zapp-secondary duration-700 transition-colors "
+          ? "  text-zapp-white  hover:bg-zapp-secondary duration-700 transition-colors "
           : "",
         variant === "secondary"
           ? "  bg-zapp-secondary text-zapp-white hover:bg-zapp-primary transition-colors"

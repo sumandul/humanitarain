@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { classNames } from "../helpers/classNames";
+import { classNames } from "../../helper/classNames";
 import { HiEye, HiEyeOff } from "react-icons/hi";
 
 const InputField = ({
@@ -21,10 +21,11 @@ const InputField = ({
 }) => {
   const currentDate = new Date().toISOString().split("T")[0];
   const [showPassword, SetShowPassword] = useState(false);
+  console.log(name);
   return (
     <div>
       {label && (
-        <label className="block capitalize text-sm sm:text-base mb-2     text-zapp-light_black  font-semibold ">
+        <label className="block capitalize text-sm sm:text-[20px] mb-4     text-[#232321]  font-semibold ">
           {label}
         </label>
       )}
@@ -32,7 +33,7 @@ const InputField = ({
         <input
           type={showPassword ? "text" : type}
           className={classNames(
-            "px-3     text-[0.8rem]  sm:text-base      w-full  bg-zapp-white  accent-zapp-primary border-[0.05rem]   focus: outline-zapp-primary   border-zapp-gray_500 rounded-[1rem]   ",
+            "px-3     text-[0.8rem]  sm:text-base       bg-zapp-white  accent-zapp-primary border-[0.05rem]   focus: outline-zapp-primary   border-zapp-gray_500 rounded-[5px]   ",
             className
           )}
           name={name}
@@ -41,7 +42,6 @@ const InputField = ({
           onChange={onChange}
           disabled={disabled}
           onClick={onClick}
-          max={currentDate}
           {...props}
           {...(register && register(name, rules))}
         />
@@ -62,7 +62,7 @@ const InputField = ({
       </div>
 
       {errors && (
-        <p className=" text-sm   text-zapp-primary  font-light  capitalize ">
+        <p className=" text-sm    text-red-500  font-light  capitalize ">
           {errors[name]?.message}
         </p>
       )}

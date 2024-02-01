@@ -51,36 +51,41 @@ export default function AdminDashBoardLayout({ children }) {
             ))}
           </ul>
         </div>
-        <div className=" flex items-center justify-between mt-10 ">
-          <div className=" text-[24px] font-[700] text-human-black">
-            Filters
-          </div>
-          <div className=" text-[14px]  font-semibold text-[#537FE7]">
-            Reset All
-          </div>
-        </div>
-        <div>
-          <h6 className=" font-[700] my-4 text-human-black text-[20px]">
-            Criteria
-          </h6>
-          <ul className=" text-human-black  text-base flex flex-col gap-5  ">
-            <li className="  flex items-center gap-2">
-              <input className=" accent-[#1B644D]" type="checkbox" />{" "}
-              Shortlisted
-            </li>
-            <li className="  flex items-center gap-2">
-              <input className=" accent-[#1B644D]" type="checkbox" />{" "}
-              Shortlisted
-            </li>
-            <li className="  flex items-center gap-2">
-              <input className=" accent-[#1B644D]" type="checkbox" /> Rejected
-            </li>
+        {router.pathname === "/admin/applicant" && (
+          <div>
+            <div className=" flex items-center justify-between mt-10 ">
+              <div className=" text-[24px] font-[700] text-human-black">
+                Filters
+              </div>
+              <div className=" text-[14px]  font-semibold text-[#537FE7]">
+                Reset All
+              </div>
+            </div>
+            <div>
+              <h6 className=" font-[700] my-4 text-human-black text-[20px]">
+                Criteria
+              </h6>
+              <ul className=" text-human-black  text-base flex flex-col gap-5  ">
+                <li className="  flex items-center gap-2">
+                  <input className=" accent-[#1B644D]" type="checkbox" />
+                  Shortlisted
+                </li>
+                <li className="  flex items-center gap-2">
+                  <input className=" accent-[#1B644D]" type="checkbox" />
+                  Shortlisted
+                </li>
+                <li className="  flex items-center gap-2">
+                  <input className=" accent-[#1B644D]" type="checkbox" />
+                  Rejected
+                </li>
 
-            <li className="  flex items-center gap-2">
-              <input className=" accent-[#1B644D]" type="checkbox" /> None
-            </li>
-          </ul>
-        </div>
+                <li className="  flex items-center gap-2">
+                  <input className=" accent-[#1B644D]" type="checkbox" /> None
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
       </div>
       <div className=" basis-[80%] py-10 px-32 ">{children}</div>
     </div>

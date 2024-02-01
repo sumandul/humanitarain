@@ -1,7 +1,6 @@
-// ... (other imports)
+import React from "react";
 
-// ... (other imports)
-import { classNames } from "@/helper/classNames";
+import { classNames } from "../../helper/classNames";
 
 const Table = ({
   columns,
@@ -15,33 +14,58 @@ const Table = ({
   const getCellValue = (row, selector) => {
     return selector(row);
   };
-
   return (
     <>
-      <div className="pb-20 overflow-x-auto sm:overflow-y-hidden">
+      <div className=" pb-20 overflow-x-auto sm:overflow-y-hidden    ">
         <table
-          className={classNames(
-            "border-[3px] border-[#6E6E9B] rounded-xl overflow-hidden  ",
-            className
-          )}
+          className={classNames(" bg-zapp-white  rounded-md  ", className)}
         >
-          <thead className="">
-            <tr className="">
-              {columns?.map((column, index) => (
-                <th
-                  className={`text-start py-4 px-2  ${
-                    index === 0 ? "" : " " // This condition might not be necessary
-                  } uppercase font-semibold text-[0.7rem] `} // Add rounded-xl here
-                  key={index}
-                >
-                  {column.header}
-                </th>
-              ))}
+          <thead className="  ">
+            <tr className="border-b-[0.0625rem]   border-zapp-gray_500">
+              {columns?.map((column, index) => {
+                return (
+                  <>
+                    <th
+                      className={` text-start py-4 px-2   ${
+                        index === 0 && " "
+                      }  uppercase   text-[20px] font-[700]`}
+                      key={index}
+                    >
+                      {column.header}
+                    </th>
+                  </>
+                );
+              })}
             </tr>
           </thead>
-          {/* ... (rest of the code) */}
+          {data?.length > 0 ? (
+            <tbody>
+              {data?.map((row, rowIndex) => {
+                return (
+                  <tr
+                    key={rowIndex}
+                    className="border-b-[0.0625rem]  rounded-lg   border-zapp-gray_500"
+                  >
+                    {columns?.map((column, columnIndex) => {
+                      return (
+                        <>
+                          <td
+                            key={columnIndex}
+                            className=" text-[0.8rem] py-4 pr-5"
+                          >
+                            {getCellValue(row, column.selector)}
+                          </td>
+                        </>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
+            </tbody>
+          ) : (
+            ""
+          )}
         </table>
-        {/* ... (rest of the code) */}
       </div>
     </>
   );

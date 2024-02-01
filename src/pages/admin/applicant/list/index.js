@@ -3,6 +3,7 @@ import AdminDashBoardLayout from "../../../../components/DashBoardLayout";
 // import ImageSkleton from "../../../../public/rect.png";
 import { HiOutlinePencil } from "react-icons/hi";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
+import Link from "next/link";
 
 export default function ApplicantsList() {
   const columns = [
@@ -22,14 +23,23 @@ export default function ApplicantsList() {
   return (
     <AdminDashBoardLayout>
       <div className=" flex flex-col  gap-16 ">
-        <div>
-          <h3 className=" text-[32px] font-semibold">Applicants</h3>
-          <p className="text-[#475569] text-[18px] font-normal">
-            Call Center Executive
-          </p>
+        <div className=" flex justify-between item center">
+          <div>
+            <h3 className=" text-[32px] font-semibold">Applicants</h3>
+            <p className="text-[#475569] text-[18px] font-normal">
+              Call Center Executive
+            </p>
+          </div>
+          <div>
+            <Link href={"/admin/applicant/shortlist"}>
+              <button className=" bg-[#21785C] rounded-[56px] py-4 font-semibold text-base px-4 text-white">
+                Open Shortlisted
+              </button>
+            </Link>
+          </div>
         </div>
         <div>
-          <Table columns={columns} className={"w-full"} />
+          <Table columns={columns} className={" w-full"} />
         </div>
         {/* <div className="  grid grid-cols-3 gap-20">
           <div className=" border-[1px] border-[#D9D9D9] flex flex-col gap-6 rounded-[12px] p-6 ">

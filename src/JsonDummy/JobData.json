@@ -1,0 +1,54 @@
+[
+    {
+        "jobId": "1",
+        "logo": "/netflix.png",
+        "title": "Arabic Speaking Banking Sales Officer",
+        "company": "Netflix",
+        "country": "Dubai",
+        "city": "Al Ain",
+        "yoe": "5-7",
+        "sector": "Finance and Accounting",
+        "date": "01/03/2024",
+        "numofApp": "50",
+        "urgency": "Immediate",
+        "salary": "10",
+        "desc": "We are seeking a talented and motivated UI/UX Designer to join our team. Core responsibilities include user interaction design, based on research and analysis in order to communicate design motivations/decisions to various stakeholders.",
+        "requirements": [
+            " Candidate MUST be employed within the UAE",
+            "Candidate MUST have experience handling voice calls, Emails, Web-chat, Whatsapp Chatbot & SMS",
+            "Candidate MUST be bi-lingual, preferably tri-lingual or more",
+            "Candidate MUST be open to rolling shifts or extended hours when & if required",
+            "Available on an immediate basis or have a notice period of 1 Week"
+        ]
+    },
+    {
+        "jobId": "2",
+        "logo": "/netflix.png",
+        "title": "Call Center Executive",
+        "company": "Microsoft",
+        "country": "Dubai",
+        "city": "",
+        "yoe": "2",
+        "sector": "Customer Support",
+        "date": "01/03/2024",
+        "numofApp": "",
+        "urgency": "Immediate",
+        "salary": "32",
+        "desc": ""
+    },
+    {
+        "jobId": "3",
+        "logo": "/netflix.png",
+        "title": "Call Center Executive",
+        "company": "Microsoft",
+        "country": "Dubai",
+        "city": "",
+        "yoe": "2",
+        "sector": "Customer Support",
+        "date": "01/03/2024",
+        "numofApp": "",
+        "urgency": "Immediate",
+        "salary": "32",
+        "desc": ""
+    }
+]

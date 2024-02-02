@@ -1,7 +1,7 @@
 // ... (other imports)
 
 // ... (other imports)
-import { classNames } from "@/helper/classNames";
+import { classNames } from "../../helper/classNames";
 
 const Table = ({
   columns,

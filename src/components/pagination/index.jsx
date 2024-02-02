@@ -8,8 +8,8 @@ export function PaginatedItems({ itemsPerPage }) {
     return (
       <>
         {currentItems &&
-          currentItems.map((item) => (
-            <div>
+          currentItems.map((item, i) => (
+            <div key={i}>
               <h3>Item #{item}</h3>
             </div>
           ))}

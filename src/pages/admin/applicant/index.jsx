@@ -4,7 +4,7 @@ import Image from "next/image";
 import ImageSkleton from "../../../../public/rect.png";
 import { HiOutlinePencil } from "react-icons/hi";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
-import { PaginatedItems } from "@/components/pagination";
+// import { PaginatedItems } from "../../components/pagination";
 
 export default function Profile() {
   return (

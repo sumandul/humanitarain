@@ -2,28 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero, .openings,.contact,.faq,.signin{
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
+.hero,
+.openings,
+.contact,
+.faq,
+.signin {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.hero{
-    background-image: url("../../public/images/hero.png");
-   
+.hero {
+  background-image: url("../../public/images/hero.png");
 }
-.openings{
-    background-image: url("../../public/images/openings.png");
-}
-
-.contact{
-    background-image: url("../../public/images/contact.png");
+.openings {
+  background-image: url("../../public/images/openings.png");
 }
 
-.faq{
-    background-image: url("../../public/images/faq.png");
+.contact {
+  background-image: url("../../public/images/contact.png");
 }
 
-.signin{
-    background-image: url("../../public/images/signin.png");
-    /* height: 80dvh; */
+.faq {
+  background-image: url("../../public/images/faq.png");
+}
+
+.signin {
+  background-image: url("../../public/images/signin.png");
+  /* height: 80dvh; */
+}
+.jodit-container:not(.jodit_inline) {
+  border-color: black !important;
+}
+.hero {
+  background-image: url("../../public/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }

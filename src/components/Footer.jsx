@@ -6,8 +6,8 @@ import Button from "./Button";
 const openSans = Open_Sans({ subsets: ["latin"] });
 const Footer = () => {
     return (
-        <footer className={`bg-[#E2E8F0] ${openSans.className}  py-12 px-16`}>
-            <section className="grid grid-cols-3 gap-10 py-4 px-16">
+        <footer className={`bg-[#E2E8F0] ${openSans.className}  py-12 px-6 sm:px-16`}>
+            <section className="grid sm:grid-cols-3 gap-10 py-4 sm:px-16">
                 <div>
                     <h2 className="text-xl font-semibold">Our Location</h2>
                     <div className="mt-8">
@@ -41,11 +41,11 @@ const Footer = () => {
             </section>
             <div className="border-[1px] border-[#F8FAFC] mt-12"></div>
 
-            <section className="flex items-center justify-between mt-6 pl-4 pr-10">
-                <div className="flex gap-8 basis-[60%] items-center">
+            <section className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 pl-4 pr-10">
+                <div className="flex flex-col sm:flex-row gap-8 sm:basis-[60%] items-center">
                     <Image src={logo} alt="logo" />
 
-                    <div className="flex justify-between gap-8 w-full font-light">
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-8 w-full font-light">
                         <div className="">
                         <p>Humanitarian Human Resource Pvt Ltd @ 2023.</p>
                         <p>All rights reserved.</p>
@@ -56,7 +56,7 @@ const Footer = () => {
                         </div>
                 </div>
 
-                <div className="flex gap-8 text-xl">
+                <div className="flex gap-8 mt-4 text-xl">
                     <i className="bi bi-facebook"></i>
                     <i className="bi bi-instagram"></i>
                     <i className="bi bi-twitter-x"></i>

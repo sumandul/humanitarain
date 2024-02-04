@@ -9,7 +9,7 @@ const FAQCard = ({question, answer}) =>{
         setIsClicked(!isClicked)
     }
     return(
-        <div className={`p-4 rounded-2xl py-10 px-12 mt-10 ${isClicked ? "border-2 border-[#2DD4BF]":" shadow-lg"}`}>
+        <div className={`p-4 rounded-2xl py-5 sm:py-10 px-6 sm:px-12 mt-10 ${isClicked ? "border-2 border-[#2DD4BF]":" shadow-lg"}`}>
         <div className="flex justify-between items-center">
         <h3 className="text-xl font-semibold">{question}</h3>
 

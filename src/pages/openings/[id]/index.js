@@ -19,7 +19,7 @@ export default function Details() {
     return (
         <>
             <hr></hr>
-            <main className="px-20 mb-14">
+            <main className="px-6 sm:px-20 mb-14">
                 <section className="mt-10">
 
                     <div className="flex justify-between items-start">
@@ -27,7 +27,7 @@ export default function Details() {
                             <div className="flex items-start gap-4">
                                 <img src={show.logo} alt="logo" className="bg-[#F0F0F5] rounded-xl" />
                                 <div>
-                                    <h2 className="text-xl font-bold mt-4">{show.title}</h2>
+                                    <h2 className="text-base sm:text-xl font-bold mt-4">{show.title}</h2>
                                     <p className="text-[#6E6E9B]">{show.company}</p>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ export default function Details() {
 
                 <hr className="my-8"></hr>
 
-                <section className="flex gap-16 items-center">
+                <section className="flex flex-col sm:flex-row gap-16 text-center sm:text-left items-center">
                     <div>
                         <h2 className="font-bold">Location</h2>
                         <p className="text-[#6E6E9B]">{show.city}, {show.country}</p>
@@ -72,7 +72,7 @@ export default function Details() {
                 </section>
                 <hr className="my-8"></hr>
 
-                <section className="w-[60%]">
+                <section className="sm:w-[60%]">
                 <h2 className="font-bold mt-4 text-xl">Job Description</h2>
                 <p className="text-[#475569] mt-2">{show.desc}</p>
 
@@ -93,7 +93,7 @@ export default function Details() {
                         <JobForm />
                     </div>
 
-                    <div>
+                    <div className="hidden sm:block">
                         <Image src={jobApp} alt="job application"/>
                     </div>
                 </section>

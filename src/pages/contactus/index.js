@@ -6,8 +6,8 @@ export default function Contact() {
         <main>
             <section className="flex justify-center contact text-white py-14">
                 <div className="text-center">
-                    <h1 className="font-extrabold text-6xl leading-[70px]">Contact Us</h1>
-                    <p className="uppercase font-bold text-2xl tracking-wider mt-6">
+                    <h1 className="font-extrabold text-3xl sm:text-6xl sm:leading-[70px]">Contact Us</h1>
+                    <p className="uppercase font-bold text-lg  sm:text-2xl tracking-wider mt-6">
                         Feel free to reach out to us with any inquiries or feedback.
                         <br></br>We're here to assist you on your career journey.</p>
                     <div className="flex gap-8 items-center mt-8">
@@ -17,21 +17,21 @@ export default function Contact() {
 
             </section>
 
-            <section className="bg-[#F6F9FD] py-14 px-24">
-                <div className="flex justify-around">
-                    <div className="bg-white w-[40%] rounded-2xl p-8">
-                        <div className="flex gap-4 border-2 border-[#E8E8E8] rounded-2xl py-3 px-4 items-center">
+            <section className="bg-[#F6F9FD] py-14 px-6 sm:px-24">
+                <div className="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-around">
+                    <div className="bg-white sm:w-[40%] rounded-2xl p-8">
+                        <div className="flex flex-col sm:flex-row gap-4 border-2 border-[#E8E8E8] rounded-2xl py-3 px-4 items-start sm:items-center">
                             <div className="flex gap-2 items-center">
-                                <i className="bi bi-telephone-fill bg-human-green text-white text-lg font-semibold rounded-2xl py-3 px-4"></i>
-                                <p className="font-semibold text-lg">Our Contact Number:</p>
+                                <i className="bi bi-telephone-fill bg-human-green text-white text-base sm:text-lg font-semibold rounded-2xl py-1 sm:py-3 px-2 sm:px-4"></i>
+                                <p className="font-semibold text-base sm:text-lg">Our Contact Number:</p>
                             </div>
                             <p className="text-xl font-light">01-5912147</p>
                         </div>
 
-                        <div className="flex gap-4 border-2 border-[#E8E8E8] rounded-2xl py-3 px-4 items-center mt-4">
+                        <div className="flex flex-col sm:flex-row gap-4 border-2 border-[#E8E8E8] rounded-2xl py-3 px-4 items-start sm:items-center mt-4">
                             <div className="flex gap-2 items-center">
-                                <i className="bi bi-envelope bg-human-green text-white text-lg font-semibold rounded-2xl py-3 px-4"></i>
-                                <p className="font-semibold text-lg">Mail Us at:</p>
+                                <i className="bi bi-envelope bg-human-green text-white text-base sm:text-lg font-semibold rounded-2xl py-1 sm:py-3 px-2 sm:px-4"></i>
+                                <p className="font-semibold text-base sm:text-lg">Mail Us at:</p>
                             </div>
                             <p className="text-xl font-light">humanitarian@email.com</p>
                         </div>

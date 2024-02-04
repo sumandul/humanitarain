@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 export default function SignIn(){
     return(
-        <main className="signin grid">
-            <section className="place-self-center grid bg-white rounded-xl  text-center w-[30%] py-8 my-10">
-                    <h1 className="text-4xl font-bold">Sign In</h1>
+        <main className="signin grid px-2">
+            <section className="place-self-center grid bg-white rounded-xl  text-center sm:w-[30%] py-8 my-10">
+                    <h1 className="text-2xl sm:text-4xl font-bold">Sign In</h1>
 
                    <LoginForm />
 
@@ -27,7 +27,7 @@ export default function SignIn(){
 
                    <div className="">
                         <p className="font-bold text-[#8391A2]">Don't have an account? </p>
-                        <div className="flex gap-4 justify-center items-center mt-3">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-3">
                            <Link href="/register-as-user"><button className="bg-[#49C199] font-bold text-white rounded-xl py-3 px-8">Register as User</button></Link> 
                            <Link href="/register-as-recruiter"><button className="bg-[#49C199] font-bold text-white rounded-xl py-3 px-8">Register as Recruiter</button></Link> 
                         </div>

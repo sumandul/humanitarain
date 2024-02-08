@@ -5,10 +5,7 @@ import ImageSkleton from "../../../../public/rect.png";
 import AdminDashBoardLayout from "../../../components/DashBoardLayout";
 import { HiMiniArrowUpTray } from "react-icons/hi2";
 import { useForm } from "react-hook-form";
-// import TextEditor from "../../../components/textEditor";
-// import TextEditor from "@/components/textEditor";
 import dynamic from "next/dynamic";
-
 const TextEditor = dynamic(() => import("../../../components/textEditor"), {
   ssr: false, // Set ssr to false to only render on the client side
 });

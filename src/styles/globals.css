@@ -6,7 +6,8 @@
 .openings,
 .contact,
 .faq,
-.signin {
+.signin,
+.getNotified {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -29,11 +30,11 @@
   background-image: url("../../public/images/signin.png");
   /* height: 80dvh; */
 }
+.getNotified{
+  background-image: url("../../public/images/getNotified.png");
+
+}
 .jodit-container:not(.jodit_inline) {
   border-color: black !important;
 }
-.hero {
-  background-image: url("../../public/images/hero.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
+

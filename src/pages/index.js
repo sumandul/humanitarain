@@ -83,13 +83,14 @@ export default function Home() {
           </div>
       </section>
 
-      <section className="text-center mt-16 py-10">
+      <section className="getNotified text-center mt-16 text-white">
+        <div className="bg-[#000000]/60  py-16">
         <i className="text-6xl text-[#FACC15] bi bi-bell-fill"></i>
         <h2 className="font-extrabold text-3xl sm:text-6xl mt-8">Get Notified</h2>
         <p className="text-base sm:text-lg font-semibold mt-8">Subscribe to our newsletter to get update on new Vacancies.</p>
         <div className="grid mt-8"> 
         <form className="place-self-center w-[332px]">
-          <input type="email" placeholder="Enter your Email Address" className="rounded-xl py-2 px-6"/>
+          <input type="email" placeholder="Enter your Email Address" className="rounded-xl py-2 w-full pl-6 text-black"/>
           
         </form>
           
@@ -103,6 +104,9 @@ export default function Home() {
             }
           />
         </div>
+
+        </div>
+       
       </section>
     </main>
   );

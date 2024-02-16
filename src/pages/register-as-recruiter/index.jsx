@@ -63,9 +63,9 @@ export default function SignInUser() {
         return () => URL.revokeObjectURL(objectUrl)
     }, [selectedFile])
     return (
-        <main className="signin px-6 grid">
+        <main className="signin grid">
            
-            <section className="place-self-center grid bg-white rounded-xl  text-center sm:w-[30%] py-8 my-10">
+            <section className="sm:place-self-center grid bg-white sm:rounded-xl  text-center sm:w-[30%] py-8 sm:my-10">
                 <Link href="/signin" className='place-self-start pl-6'><i className="bi bi-arrow-left text-2xl text-left"></i></Link>
                 <div className="flex justify-center">
 

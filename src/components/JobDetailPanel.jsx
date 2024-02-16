@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function JobDetailPanel({id, title, company, country, city, yoe, sector,numOfApp,desc, salary, date,logo,onClick}){
     
     return(
-        <div className="pl-4 pr-10">
+        <div className="hidden sm:block pl-4 pr-10">
         <div className="flex justify-between items-start mt-6">
             <div>
                 <img src={logo} alt="logo" className="bg-[#F0F0F5] rounded-xl" />

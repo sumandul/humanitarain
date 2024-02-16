@@ -1,7 +1,6 @@
-import Link from "next/link";
 import AdminDashBoardLayout from "../../../components/DashBoardLayout";
-import { Button } from "@/components/button";
-import InputField from "@/components/inputfield";
+import { Button } from "../../../components/button";
+import InputField from "../../../components/inputfield";
 import Image from "next/image";
 import ImageSkleton from "../../../../public/profile.png";
 import { HiOutlinePencil } from "react-icons/hi";

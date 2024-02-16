@@ -1,20 +1,14 @@
 import { useState } from "react";
-import InputField from "@/components/inputfield";
+import InputField from "../../../components/inputfield";
 import Image from "next/image";
 import ImageSkleton from "../../../../public/rect.png";
 import AdminDashBoardLayout from "../../../components/DashBoardLayout";
 import { HiMiniArrowUpTray } from "react-icons/hi2";
 import { useForm } from "react-hook-form";
-// import TextEditor from "@/components/textEditor";
 import dynamic from "next/dynamic";
-
-const DynamicTextEditor = dynamic(
-  () => import("../../../components/textEditor"),
-  {
-    ssr: false, // Set ssr to false to only render on the client side
-  }
-);
-// import textEditor from "../../../components/textEditor";
+const TextEditor = dynamic(() => import("../../../components/textEditor"), {
+  ssr: false, // Set ssr to false to only render on the client side
+});
 
 export default function Profile() {
   const {
@@ -91,7 +85,7 @@ export default function Profile() {
                 />
               </div>
               <div>
-                <DynamicTextEditor label={"Job Description"} />
+                <TextEditor label={"Job Description"} />
               </div>
               <div>
                 <InputField

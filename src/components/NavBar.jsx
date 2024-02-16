@@ -2,12 +2,13 @@
 import Image from "next/image"
 import Logo from "../../public/images/logo.png"
 
-import { Open_Sans, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Link from "next/link";
 import { useState } from "react";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
-const roboto = Roboto({ subsets: ["latin"], weight:["400", "700"] });
+
+
+const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
 const NavItems = [
     {
@@ -32,30 +33,37 @@ const NavItems = [
         "link":"/contactus"},
 ]
 export default function NavBar(){
-    const [isHamburgerClicked, setIsHamburgerClicked] = useState(false)
 
-    const handleNavClick = () =>{
-        console.log("aaaaa");
-        console.log("Clicked", isHamburgerClicked);
-        setIsHamburgerClicked(!isHamburgerClicked)
+    const [hamburg, setHamBurg] = useState(false)
+
+
+    const handleClick = () =>{
+        console.log("Aaaa");
+        setHamBurg(!hamburg)
     }
+
+  
     return(
 
         <header className="sm:px-40 sm:py-6">
             <nav className={`flex gap-10 items-center justify-between font-bold relative ${roboto.className}`}>
-                <div className="max-w-[100px]  sm:max-w-[175px] sm:max-h-[95px]"><Link href="/"><Image src={Logo} alt="logo" className="max-w-full max-h-full"/></Link></div>
-                <button className="sm:hidden" onClick={handleNavClick}>
-                    <i className="bi bi-list font-bold text-2xl"></i>
+                <div className="max-w-[100px]  sm:max-w-[175px] sm:max-h-[95px]">
+                    <Link href="/">
+                        <Image src={Logo} alt="logo" className="max-w-full max-h-full"/>
+                    </Link>
+                </div>
+                <button className="pr-4 sm:hidden" onClick={handleClick}>
+                    {hamburg ? <i className="bi bi-x font-bold text-2xl"></i> : <i className="bi bi-list font-bold text-2xl"></i>}
                 </button>
-                {
-                    isHamburgerClicked && <h1>aaaaaaaaaaaaaaa</h1>
-                }
-               <ul className="sm:flex hidden absolute sm:static sm:top-0  bottom-0 z-99 text-center bg-white sm:gap-4">
+              
+               <ul className={`${hamburg ? "block top-16 right-0 text-left py-4 text-base pl-3 pr-10 bg-white w-fit h-fit" :"hidden "} bottom-0  z-99 bg-white absolute sm:flex sm:static sm:top-0 sm:gap-4`}>
                     {
                         NavItems.map((data,index) =>{
-                            return <Link href={data.link} key={index}><li>{data.item}</li></Link>
+                            return <Link href={data.link} key={index} onClick={handleClick}><li className="mb-4 sm:mb-0">{data.item}</li></Link>
                         })
                     }
+
+                    <Link href="/signin" className="sm:hidden" onClick={handleClick}><button className="border-b-2 border-human-green">Login</button></Link> 
                 </ul>
              
                   

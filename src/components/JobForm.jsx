@@ -28,7 +28,7 @@ export default function JobForm() {
    
     return (
         <form>
-            <div className="flex flex-col gap-4 mt-4">
+            <div className="flex flex-col gap-6 mt-4">
                 <div className="flex gap-4 font-bold">
                     <i className="bi bi-upload"></i>
                     <h3 className=''>Upload Your CV*</h3>

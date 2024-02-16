@@ -1,4 +1,4 @@
-import Table from "@/components/table";
+import Table from "../../../../components/table/";
 import AdminDashBoardLayout from "../../../../components/DashBoardLayout";
 // import ImageSkleton from "../../../../public/rect.png";
 import { HiOutlinePencil } from "react-icons/hi";

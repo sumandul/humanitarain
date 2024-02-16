@@ -4,7 +4,7 @@ import { FormControlLabel, FormGroup, PaginationItem } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
 import { useEffect, useState } from 'react';
 import Pagination from '@mui/material/Pagination';
-export default function Filters({ onClick, isFilterShown }) {
+export default function Filters({ onClick, isFilterShown, mobileFilter }) {
     const [value, setValue] = useState([0, 100000]);
     // Location checkbox
     const [malaysia, setMalaysia] = useState(false)
@@ -61,6 +61,17 @@ export default function Filters({ onClick, isFilterShown }) {
 
     return (
         <>
+            {/* This is for mobile veiw only */}
+            {mobileFilter &&  
+            <div className={`flex gap-2 items-center my-3`}>
+                <i className="bi bi-arrow-left text-lg"></i>
+                <button className="underline text-center text-[#537FE7] font-semibold" onClick={() => onClick()}> Hide Filters</button>
+             
+            </div> 
+            }
+            {/* End of mobile view */}
+
+
             <div className={`flex items-center ${isFilterShown ? 'justify-between': 'justify-center' }`}>
                 {isFilterShown ? 
                 <> 
@@ -70,7 +81,7 @@ export default function Filters({ onClick, isFilterShown }) {
 
             </div>
 
-            <div className='flex justify-center'>
+            <div className={`${mobileFilter ? "hidden":"flex"} justify-center`}>
                 <button className="underline mt-4 text-center text-[#537FE7] font-semibold" onClick={() => onClick()}>{isFilterShown ? 'Hide' : 'Show'} Filters</button>
             </div>
             {
